@@ -4,16 +4,20 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueGrey[900],
         appBar: AppBar(
-          title: Text('I am rich!!!'),
-          backgroundColor: Colors.blueGrey[800],
+          leading: Image(
+            image: NetworkImage(
+                'https://image.flaticon.com/icons/png/512/1121/1121842.png'),
+          ),
+          title: Text('I am poor'),
+          backgroundColor: Colors.red[400],
         ),
         body: Center(
           child: Image(
-            image: AssetImage('images/diamond.png'),
+            image: AssetImage('images/poor_man.jpg'),
           ),
         ),
+        backgroundColor: Colors.red[900],
       ),
     ),
   );
